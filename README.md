@@ -31,15 +31,23 @@ Scrapy-парсер для сбора данных о товарах с сайт
    cd alkoteka_parser
    ```
 3. Создайте виртуальное окружение и активируйте его:
+  
+   Для macOS/Linux
    ```bash
    python3 -m venv venv
    source venv/bin/activate 
    ```
-4. Установите зависимости:
+   Для Windows
+   ```bash
+   python -m venv myenv
+   myenv\Scripts\activate
+   ```
+   
+6. Установите зависимости:
    ```bash
    pip install -r requirements.txt
    ```
-5. Настройте URL адреса для парсинга:
+7. Настройте URL адреса для парсинга:
    - Перейти в каталог `alkotekaParser/alkoteka_parser/spiders`
    - Открыть `alkoteka_spyder.py`
    - В классе AlkotekaDetailSpider найдите атрибут START_URLS и добавьте в список необходимые URL.
